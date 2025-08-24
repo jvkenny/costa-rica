@@ -1,0 +1,6 @@
+name = "cr-form-proxy"
+main = "src/index.ts"
+compatibility_date = "2025-08-13"
+
+[observability]
+enabled = true
