@@ -22,7 +22,7 @@ export default function LandingPage({ onEnter, onShowTips, onShowRules }) {
         <div className="btn-row">
           <button className="btn btn--tips" onClick={onShowTips}>🌴 Tips & Coordination</button>
           <button className="btn btn--rules" onClick={onShowRules}>🛡️ Rules & Expectations</button>
-          <button className="btn btn--schedule" onClick={onEnter}>🗓️ Activity Signup & Possible Schedule</button>
+          <button className="btn btn--schedule" onClick={onEnter}>🗓️ Activities, Meals, & Schedule</button>
         </div>
       </div>
     </>

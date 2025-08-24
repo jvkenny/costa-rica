@@ -4,7 +4,7 @@ import Papa from "papaparse";
 import { ENTREES, SIDES } from "../data/dinner";
 
 // ---- Configure these three ----
-const DINNER_SHEET_NAME = "Dinner — Saturday";
+const DINNER_SHEET_NAME = "Dinner";
 const ROSTER_DINNER_CSV_URL =
   "https://docs.google.com/spreadsheets/d/1YRtn_hKAm2OlP46XwhaOImenzWFkyW6RGQPGzVw60UA/export?format=csv&gid=1477118801";
 // optional: set VITE_APPS_SCRIPT_URL_DINNER in .env, else fallback to your existing endpoint

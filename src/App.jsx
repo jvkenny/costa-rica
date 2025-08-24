@@ -87,7 +87,8 @@ export default function App() {
     return <SignupPage onBack={() => setPage(prevPage || "landing")} />;
   }
   if (page === "dinner") {
-    return <DinnerPage onBack={() => setPage(prevPage || "landing")} />;
+    setPage(null);
+    return null;
   }
 
   // main schedule view
@@ -156,10 +157,7 @@ export default function App() {
               <button className="btn" onClick={() => navigate("rules")}>
                 🛡️ Expectations & Rules
               </button>
-              {/* Logical spot in header nav */}
-              <button className="btn" onClick={() => navigate("dinner")}>
-                🍽️ Saturday Dinner
-              </button>
+              {/* Removed Dinner button */}
             </div>
           </div>
 
@@ -181,13 +179,7 @@ export default function App() {
           >
             📝 Commit to Activities — Save Your Spot
           </button>
-          <button
-            className="btn btn--cta"
-            onClick={() => navigate("dinner")}
-            aria-label="Choose Saturday Dinner"
-          >
-            🍽️ Choose Saturday Dinner
-          </button>
+          {/* Removed Dinner CTA button */}
         </div>
 
         <OptionPanel
